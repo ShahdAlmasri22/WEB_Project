@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background:  #c9aa92;
+    height: 100%;      
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  
+  #mynav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    height: 80px; 
+    background-color: #f5ede8;
+      z-index: 2222222;
+  }
+  
+  .menu {
+    display: flex; 
+    gap: 20px;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #805436;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .menu img{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+  }
+  
+  .menu button:hover {
+    color: #f0eff1;
+    background-color: #af9886;
+    border-radius: 40em;
+    transform: scale(1.1);
+  }
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.div1{
+    height: 450px;
+    background: #f5ede8;
+    border-radius: 60px;
+    z-index: 11111111;
+  }
+  
+  .Question{
+    position: absolute;
+    font-size: 40px;
+    left: 27%;
+    top:20%;
+    color: #805436;
+  }
+  .Question img{
+    position: absolute;
+    left: 400px;
+    top:-50px;
+  }
+  .Question pre{
+    position: absolute;
+    font-size: 19px;
+    color: #805436;
+    top: 100px;
+    left: -45px;
+  }
+
+  
+  .question {
+    background: #f5ede8; 
+    width: 90%;
+    color: #805436; 
+    padding: 25px;
+    border-radius: 12px; 
+    margin: 30px auto 15px;
+    border: 2px solid #af9886; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; 
+    position: relative; 
+}
+
+.question:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.question h3 {
+    font-size: 22px; 
+    margin-bottom: 10px; 
+    color: #805436; 
+    font-weight: 600; 
+    display: flex; 
+    align-items: center; 
+}
+
+.question p {
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #805436; 
+}
+
+.question button {
+    background-color: #af9886; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 14px; 
+    margin-top: 15px; 
+    transition: background-color 0.3s; 
+}
+
+.question button:hover {
+    background-color: #805436; 
+}
+.answer-form {
+    margin-top: 10px;
+}
+.answer-form textarea, .answer-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.answer-form button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.answer-form button.cancel {
+    background: #dc3545;
+}
+.answers {
+    margin-top: 10px;
+}
+.answers p {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #f4f0ec;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+.modal-content input, .modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.modal-content button {
+    padding: 10px 20px;
+    /*margin: 5px;*/
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-content button.confirm {
+    background: #28a745;
+    color: #fff;
+}
+.modal-content button.cancel {
+    background: #dc3545;
+    color: #fff;
+}
+.option-item button {
+    background-color: #c6c0c1;
+    color: white;
+    border: none;
+    padding: 0; 
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%; /* استخدام 50% لإنشاء دائرة */
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.option-item button:hover {
+    background-color: #c82333;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option-item input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+#answerForm div {
+    position: relative;
+}
+
+#answerForm label {
+    position: absolute;
+    font-size: 14px;
+    color: #333; 
+    bottom: 10px;
+    left: 30px;
+    
+}
+
+  .cssbuttons-io-button {
+    position: absolute;
+    left: 26%;
+    margin-top: -120px;
+    background: #805436;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #805436;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #805436;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #805436;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }

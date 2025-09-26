@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background:  #c9aa92;
+}
+
+#mynav {
+    position: fixed;
+    top: 0;
+    left: -27px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: #f5ede8;
+    z-index: 11;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #805436;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.menu .pag{
+    position: absolute;
+    left: 96%;
+    width: 24px;
+    height: 24px;
+}
+
+.menu button:hover {
+    color: #f0eff1;
+    background-color: #af9886;
+    border-radius: 40em;
+    transform: scale(1.1);
+}
+
+.div1{
+    height: 480px;
+    background: #f5ede8;
+    border-radius: 60px;
+}
+
+.Question{
+    position: absolute;
+    font-size: 40px;
+    left: 20%;
+    top:17%;
+    color: #805436;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Question img{
+    position: absolute;
+    left: 670px;
+    top:-10px;
+    height: 180px;
+    width: 180px;
+}
+.Question pre{
+    position: absolute;
+    font-size: 19px;
+    color: #805436;
+    top: 96px;
+    left: -40px;
+}
+
+.all, .footer {
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5ede8;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.all p {
+    font-size: 24px;
+    color: #805436;
+    margin-bottom: 20px;
+}
+
+.courses {
+    position: relative;
+    margin-top:70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background: #805436;
+    border: 1px solid #805436;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5ede8;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    color: #f5ede8;
+    text-decoration: none;
+}
+#JAVA, #PYTHON, #C\+\+, #js, #css, #html, #C, #JavaFX, #REACT, #PHP, #SQL, #C\#, #AJAX, #XML, #MySQL,
+#DataStructure, #BOOTSTRAP, #JQUERY, #TypeScript, #Nodejs, #MongoDB {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5ede8;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #805436;
+}
+
+
+.desc{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    border: 1px dotted #805436;
+    padding: 10px;
+}
+
+.feed {
+    font-size: 18px;
+    color: #f5ede8;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.para p {
+    color: #f5ede8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#cont {
+    color: #f5ede8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#cont:hover {
+    color: black;;
+}
+
+
+
